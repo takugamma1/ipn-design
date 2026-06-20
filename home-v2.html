@@ -12,7 +12,7 @@
   <script>
     tailwind.config = { theme: { extend: {
       colors: {
-        ink:'#171a2b','ink-2':'#262a3d', muted:'#737892','muted-2':'#a0a4ba',
+        ink:'#171a2b','ink-2':'#262a3d', muted:'#5f6480','muted-2':'#a0a4ba',
         line:'#e9eaf2','line-2':'#dddff0',
         primary:{DEFAULT:'#6c5ce7', dark:'#5a49d6', light:'#8a7bf0'},
         navy:{DEFAULT:'#1d2b5e', dark:'#16234e', darker:'#0e1838', light:'#2c3c78'},
@@ -40,7 +40,7 @@
     select{-webkit-appearance:none;appearance:none}
     .no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
     /* editorial eyebrow label */
-    .eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#6c5ce7}
+    .eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#5a49d6}
     .eyebrow::before{content:'';width:22px;height:2px;border-radius:2px;background:linear-gradient(90deg,#6c5ce7,#8a7bf0)}
     .eyebrow.on-dark{color:rgba(255,255,255,.8)}
     .eyebrow.on-dark::before{background:linear-gradient(90deg,rgba(255,255,255,.9),rgba(255,255,255,.3))}
@@ -145,18 +145,19 @@
 <!-- ===================== NAVY BANNER + BRAND STRIP ===================== -->
 <section class="max-w-[1340px] mx-auto px-6 pb-20 lg:pb-24">
   <div class="reveal rounded-[2rem] overflow-hidden shadow-soft border border-line">
-    <div class="relative overflow-hidden" style="background:radial-gradient(125% 150% at 88% 12%, #2c3c78 0%, #1d2b5e 42%, #101a3e 100%)">
+    <div class="relative overflow-hidden" style="background:radial-gradient(120% 145% at 80% 15%, #2c3c78 0%, #1d2b5e 45%, #16234e 100%)">
       <div class="absolute -right-16 -top-24 w-80 h-80 rounded-full bg-white/[0.06] pointer-events-none"></div>
       <div class="absolute left-0 bottom-0 w-72 h-72 rounded-full bg-black/10 blur-2xl pointer-events-none"></div>
-      <div class="grid lg:grid-cols-2 gap-8 items-center px-8 lg:px-14 py-12 lg:py-14 relative">
+      <div class="grid lg:grid-cols-2 gap-8 items-center px-8 lg:px-14 py-12 lg:py-16 relative">
         <div>
           <span class="eyebrow on-dark">Тонери и касети</span>
           <h3 class="mt-4 font-display text-[30px] lg:text-[40px] font-extrabold text-white tracking-[-.025em] leading-[1.05]">Тонери за всяка марка</h3>
           <p class="mt-5 text-[15px] text-white/70 leading-relaxed max-w-[440px]">Оригинални, съвместими и рециклирани решения с гарантирано качество и до 70% по-ниска цена.</p>
           <a href="collection.html" class="btn mt-8 inline-flex h-13 px-7 py-3.5 rounded-full bg-primary text-white text-[14.5px] font-semibold items-center gap-2.5 hover:bg-primary-dark shadow-btn arrow-cta">Разгледай продуктите <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></a>
         </div>
-        <div class="relative flex justify-center lg:justify-end items-center min-h-[260px] pr-2">
-          <img src="images/banner-cartridge.png" alt="IPN тонер касета и опаковка" class="relative z-10 w-full max-w-[580px] h-auto drop-shadow-[0_30px_50px_rgba(0,0,0,0.55)]">
+        <div class="relative flex justify-center lg:justify-end items-center min-h-[260px] pr-4 lg:pr-6">
+          <div class="absolute right-[5%] top-1/2 -translate-y-1/2 w-[470px] h-[330px] rounded-full bg-[radial-gradient(closest-side,rgba(140,123,240,0.30),transparent_72%)] blur-2xl pointer-events-none"></div>
+          <img src="images/banner-cartridge.png" alt="IPN тонер касета и опаковка" class="relative z-10 w-full max-w-[520px] h-auto drop-shadow-[0_30px_50px_rgba(0,0,0,0.55)]">
         </div>
       </div>
     </div>
@@ -193,7 +194,7 @@
       <a href="dashboard.html" class="btn mt-9 inline-flex h-13 px-7 py-3.5 rounded-full bg-primary text-white text-[14.5px] font-semibold items-center gap-2.5 hover:bg-primary-dark shadow-btn arrow-cta">Научи повече <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></a>
     </div>
   </div>
-  <div class="reveal mt-14 rounded-[2rem] grid grid-cols-2 lg:grid-cols-4 gap-y-10 py-11 px-6 relative overflow-hidden shadow-soft" style="background:radial-gradient(120% 160% at 12% 0%, #2c3c78 0%, #1d2b5e 42%, #101a3e 100%)">
+  <div class="reveal mt-14 rounded-[2rem] grid grid-cols-2 lg:grid-cols-4 gap-y-10 py-11 px-6 relative overflow-hidden shadow-soft" style="background:radial-gradient(120% 145% at 80% 15%, #2c3c78 0%, #1d2b5e 45%, #16234e 100%)">
     <div class="absolute -right-10 -bottom-20 w-72 h-72 rounded-full bg-white/[0.05] pointer-events-none"></div>
     <div class="flex items-center gap-4 px-4 lg:px-6 relative lg:border-r border-white/10"><span class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-white shrink-0"><svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972"/></svg></span><div><p class="font-display text-[30px] font-extrabold text-white leading-none tracking-tight">25+</p><p class="mt-2 text-[12px] text-white/70">години на пазара</p></div></div>
     <div class="flex items-center gap-4 px-4 lg:px-6 relative lg:border-r border-white/10"><span class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-white shrink-0"><svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5h.008v.008h-.008V7.5z"/></svg></span><div><p class="font-display text-[30px] font-extrabold text-white leading-none tracking-tight">5</p><p class="mt-2 text-[12px] text-white/70">физически обекта в страната</p></div></div>
@@ -243,7 +244,7 @@
 <!-- ===================== QUOTE CTA ===================== -->
 <section id="quote" class="bg-cream-2 border-t border-line py-20 lg:py-24 scroll-mt-[140px]">
   <div class="max-w-[1340px] mx-auto px-6">
-    <div class="reveal rounded-[2rem] overflow-hidden shadow-soft relative grid lg:grid-cols-2 gap-8 items-center px-8 lg:px-14 py-12 lg:py-16" style="background:radial-gradient(120% 150% at 10% 100%, #2c3c78 0%, #1d2b5e 42%, #101a3e 100%)">
+    <div class="reveal rounded-[2rem] overflow-hidden shadow-soft relative grid lg:grid-cols-2 gap-8 items-center px-8 lg:px-14 py-12 lg:py-16" style="background:radial-gradient(120% 145% at 80% 15%, #2c3c78 0%, #1d2b5e 45%, #16234e 100%)">
       <div class="absolute -left-16 -bottom-24 w-80 h-80 rounded-full bg-white/[0.06]"></div>
       <div class="relative">
         <span class="eyebrow on-dark">Персонална оферта</span>
@@ -251,8 +252,9 @@
         <p class="mt-5 text-[15px] text-white/70 leading-relaxed max-w-[440px]">Получете персонална оферта, съобразена с Вашите марки, обеми и срокове — без обвързване.</p>
         <a href="dashboard.html" class="btn btn-light mt-8 inline-flex h-13 px-7 py-3.5 rounded-full bg-white text-primary text-[14.5px] font-semibold items-center gap-2.5 hover:bg-mint arrow-cta">Поискай оферта <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></a>
       </div>
-      <div class="relative flex justify-center lg:justify-end items-center min-h-[260px] pr-2">
-        <img src="images/banner-cartridge.png" alt="IPN тонер касета и опаковка" class="relative z-10 w-full max-w-[560px] h-auto drop-shadow-[0_30px_50px_rgba(0,0,0,0.55)]">
+      <div class="relative flex justify-center lg:justify-end items-center min-h-[260px] pr-4 lg:pr-6">
+        <div class="absolute right-[5%] top-1/2 -translate-y-1/2 w-[470px] h-[330px] rounded-full bg-[radial-gradient(closest-side,rgba(140,123,240,0.34),transparent_72%)] blur-2xl pointer-events-none"></div>
+        <img src="images/banner-cartridge.png" alt="IPN тонер касета и опаковка" class="relative z-10 w-full max-w-[520px] h-auto drop-shadow-[0_30px_50px_rgba(0,0,0,0.55)]">
       </div>
     </div>
   </div>
