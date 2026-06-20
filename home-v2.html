@@ -102,9 +102,11 @@
 </header>
 
 <!-- ===================== HERO ===================== -->
-<section class="bg-gradient-to-b from-[#f4f7f5] to-white border-b border-line">
-  <div class="max-w-[1240px] mx-auto px-6 py-14 lg:py-16 grid lg:grid-cols-[1.02fr_.98fr] gap-10 items-center">
-    <div>
+<section class="relative border-b border-line overflow-hidden bg-[#f1f5f3]">
+  <div class="absolute inset-0 bg-cover bg-center lg:bg-right" style="background-image:url('images/hero/hero-bg.jpg')"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/25 lg:from-white lg:via-white/60 lg:to-transparent"></div>
+  <div class="relative max-w-[1240px] mx-auto px-6 py-16 lg:py-28">
+    <div class="max-w-[600px]">
       <h1 class="text-[40px] lg:text-[52px] font-extrabold tracking-[-.02em] leading-[1.04] text-ink">Всичко за<br>Вашия печат.<br><span class="text-forest">На едно място.</span></h1>
       <p class="mt-6 text-[16px] leading-relaxed text-[#576560] max-w-[460px]">Оригинални, съвместими и рециклирани консумативи с бърза доставка и гарантирана съвместимост.</p>
       <div class="mt-8 flex flex-wrap items-center gap-3">
@@ -116,12 +118,6 @@
         <div class="flex items-center gap-3"><span class="w-10 h-10 rounded-xl bg-forest/10 flex items-center justify-center text-forest shrink-0"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg></span><div><p class="text-[13.5px] font-bold text-ink leading-tight">Доставка до 24ч</p><p class="text-[12px] text-muted">Бързо и сигурно</p></div></div>
         <div class="flex items-center gap-3"><span class="w-10 h-10 rounded-xl bg-forest/10 flex items-center justify-center text-forest shrink-0"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 7.5h-.75A2.25 2.25 0 004.5 9.75v7.5a2.25 2.25 0 002.25 2.25h7.5a2.25 2.25 0 002.25-2.25v-7.5a2.25 2.25 0 00-2.25-2.25h-.75m-6 3.75l3 3m0 0l3-3m-3 3V1.5m6 9h.75a2.25 2.25 0 012.25 2.25v7.5a2.25 2.25 0 01-2.25 2.25h-7.5"/></svg></span><div><p class="text-[13.5px] font-bold text-ink leading-tight">Собствено рециклиране</p><p class="text-[12px] text-muted">Грижа за природата</p></div></div>
       </div>
-    </div>
-    <!-- hero composite -->
-    <div class="relative flex items-center justify-center min-h-[360px]">
-      <div class="absolute inset-0 flex items-center justify-center pointer-events-none"><div class="w-[440px] h-[440px] rounded-full bg-gradient-to-br from-white to-[#e4efe9]"></div></div>
-      <img src="images/hero/hero-printer.png" alt="Принтер" class="relative z-10 w-full max-w-[460px] h-auto object-contain drop-shadow-2xl" onerror="this.style.display='none'">
-      <svg class="absolute z-20 right-0 bottom-6 w-[190px] h-auto drop-shadow-2xl"><use href="#ipn-box"/></svg>
     </div>
   </div>
 </section>
