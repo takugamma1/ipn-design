@@ -339,81 +339,46 @@
         </div>
       </div>
 
-      <!-- Right: printer illustration -->
+      <!-- Right: printer photo -->
       <div class="relative hidden lg:flex items-center justify-center pb-12 self-stretch">
-        <!-- soft circle backdrop behind the cut-out printer -->
-        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div class="w-[440px] h-[440px] rounded-full bg-gradient-to-br from-white to-[#e7e0fa]"></div>
-        </div>
+        <div class="relative w-full max-w-[560px]">
+          <!-- Hero product photo -->
+          <img src="images/hero/hero-printer-scene.webp" alt="HP мултифункционален принтер" class="relative z-10 w-full h-auto rounded-3xl object-cover">
 
-        <!-- Floating badge: in stock -->
-        <div class="absolute top-8 left-2 z-20 bg-white rounded-2xl shadow-soft border border-line px-4 py-3 flex items-center gap-3">
-          <span class="w-9 h-9 rounded-xl bg-recycle/12 flex items-center justify-center text-recycle shrink-0">
-            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          </span>
-          <div>
-            <p class="text-[13px] font-bold text-ink leading-tight">В наличност</p>
-            <p class="text-[11.5px] text-muted">Готови за изпращане</p>
+          <!-- Floating badge: in stock -->
+          <div class="absolute -top-6 -left-3 z-20 bg-white rounded-2xl shadow-soft border border-line px-4 py-3 flex items-center gap-3">
+            <span class="w-9 h-9 rounded-xl bg-recycle/12 flex items-center justify-center text-recycle shrink-0">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </span>
+            <div>
+              <p class="text-[13px] font-bold text-ink leading-tight">В наличност</p>
+              <p class="text-[11.5px] text-muted">Готови за изпращане</p>
+            </div>
           </div>
-        </div>
 
-        <!-- Floating badge: delivery -->
-        <div class="absolute top-6 right-0 z-20 bg-white rounded-2xl shadow-soft border border-line px-4 py-3 flex items-center gap-3">
-          <span class="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
-            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
-          </span>
-          <div>
-            <p class="text-[13px] font-bold text-ink leading-tight">Доставка до 24 часа</p>
-            <p class="text-[11.5px] text-muted">Еконт и Европът</p>
+          <!-- Floating badge: delivery -->
+          <div class="absolute -top-5 -right-3 z-20 bg-white rounded-2xl shadow-soft border border-line px-4 py-3 flex items-center gap-3">
+            <span class="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+            </span>
+            <div>
+              <p class="text-[13px] font-bold text-ink leading-tight">Доставка до 24 часа</p>
+              <p class="text-[11.5px] text-muted">Еконт и Европът</p>
+            </div>
           </div>
-        </div>
 
-        <!-- Floating badge: experience -->
-        <div class="absolute bottom-16 left-6 z-20 bg-white rounded-2xl shadow-soft border border-line px-4 py-3 flex items-center gap-3">
-          <span class="w-9 h-9 rounded-xl bg-grape/10 flex items-center justify-center text-grape shrink-0">
-            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0"/></svg>
-          </span>
-          <div>
-            <p class="text-[13px] font-bold text-ink leading-tight">20+ години опит</p>
-            <p class="text-[11.5px] text-muted">в консумативите</p>
+          <!-- Floating badge: experience -->
+          <div class="absolute -bottom-6 left-8 z-20 bg-white rounded-2xl shadow-soft border border-line px-4 py-3 flex items-center gap-3">
+            <span class="w-9 h-9 rounded-xl bg-grape/10 flex items-center justify-center text-grape shrink-0">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0"/></svg>
+            </span>
+            <div>
+              <p class="text-[13px] font-bold text-ink leading-tight">20+ години опит</p>
+              <p class="text-[11.5px] text-muted">в консумативите</p>
+            </div>
           </div>
+
         </div>
-
-        <!-- Hero product photo (placed where the illustration sits) -->
-        <img src="images/hero/hero-printer.png" alt="HP мултифункционален принтер" class="absolute inset-0 z-10 w-full h-full object-contain p-4 drop-shadow-2xl" onerror="this.style.display='none'">
-
-        <svg class="relative w-[460px] h-auto drop-shadow-xl" viewBox="0 0 460 390" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- plant -->
-          <g>
-            <!-- leaves -->
-            <path d="M392 300c-2-40 8-66 34-86-16 26-16 52-12 86z" fill="#3f9f6f"/>
-            <path d="M392 300c2-44-14-70-40-86 16 24 22 54 22 86z" fill="#4cb582"/>
-            <path d="M392 302c4-30 22-50 44-58-18 16-28 36-30 58z" fill="#379067"/>
-            <path d="M392 302c-4-30-24-48-46-54 18 14 30 34 32 54z" fill="#56c08c"/>
-            <path d="M392 304c1-26 0-48-2-64-3 22-6 42-6 64z" fill="#3f9f6f"/>
-            <!-- pot -->
-            <path d="M414 300H370l4 50a6 6 0 006 5.6h24a6 6 0 006-5.6l4-50z" fill="#e2a35f"/>
-            <path d="M368 296h48a4 4 0 014 4v3a4 4 0 01-4 4h-48a4 4 0 01-4-4v-3a4 4 0 014-4z" fill="#ecb979"/>
-          </g>
-          <!-- printer body -->
-          <rect x="74" y="156" width="262" height="152" rx="18" fill="#f3f3f7"/>
-          <rect x="74" y="156" width="262" height="152" rx="18" stroke="#e3e3ec" stroke-width="2"/>
-          <rect x="74" y="156" width="262" height="58" rx="18" fill="#fbfbfd"/>
-          <!-- top lid -->
-          <rect x="98" y="128" width="214" height="40" rx="12" fill="#fdfdfe" stroke="#e3e3ec" stroke-width="2"/>
-          <!-- paper out -->
-          <rect x="126" y="98" width="158" height="42" rx="4" fill="#ffffff" stroke="#e9e9f1" stroke-width="2"/>
-          <line x1="146" y1="112" x2="264" y2="112" stroke="#e6e6ee" stroke-width="3" stroke-linecap="round"/>
-          <line x1="146" y1="122" x2="240" y2="122" stroke="#efeff4" stroke-width="3" stroke-linecap="round"/>
-          <!-- control panel -->
-          <rect x="98" y="184" width="70" height="42" rx="9" fill="#1b1e2e"/>
-          <circle cx="116" cy="205" r="5.5" fill="#6c5ce7"/>
-          <rect x="130" y="200" width="28" height="4" rx="2" fill="#4a4f66"/>
-          <rect x="130" y="210" width="20" height="4" rx="2" fill="#3a3f55"/>
-          <!-- front output slot -->
-          <rect x="98" y="252" width="214" height="38" rx="9" fill="#e8e8f0"/>
-          <rect x="118" y="266" width="174" height="10" rx="5" fill="#d8d8e2"/>
-        </svg>
       </div>
     </div>
 
